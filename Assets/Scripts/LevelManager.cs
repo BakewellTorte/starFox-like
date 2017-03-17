@@ -3,7 +3,7 @@
 public class LevelManager : MonoBehaviour
 {
     [SerializeField]
-    private Vector2 m_bounds = new Vector2(10, 5);
+    private Vector3 m_bounds = new Vector3(10, 5, 100);
 
     public static LevelManager Instance = null;
     void Start()
@@ -18,5 +18,5 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public Vector2 Bounds { get { return m_bounds; } }
+    public Vector3 Bounds { get { return m_bounds; } }
 }
